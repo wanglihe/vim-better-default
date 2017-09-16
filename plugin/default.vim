@@ -56,6 +56,7 @@ set mousehide      " Hide the mouse cursor while typing
 set hidden         " Allow buffer switching without saving
 set t_Co=256       " Use 256 colors
 set ruler          " Show the ruler
+set cc=81
 set showcmd        " Show partial commands in status line and Selected characters/lines in visual mode
 set showmode       " Show current mode in command-line
 set showmatch      " Show matching brackets/parentthesis
