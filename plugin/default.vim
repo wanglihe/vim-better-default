@@ -216,11 +216,6 @@ endif
         cnoremap <C-a> <Home>
         cnoremap <C-e> <End>
         cnoremap <C-d> <Delete>
-        " jk | escaping
-        inoremap jj <Esc>
-        inoremap jk <Esc>
-        cnoremap jj <C-c>
-        cnoremap jk <C-c>
         " Quit visual mode
         vnoremap v <Esc>
         " Move to the start of line
