@@ -22,7 +22,6 @@ if !has('nvim')
   syntax on                      " Syntax highlighting
   filetype plugin indent on      " Automatically detect file types
   set autoindent                 " Indent at the same level of the previous line
-  set autoread                   " Automatically read a file changed outside of vim
   set backspace=indent,eol,start " Backspace for dummies
   set complete-=i                " Exclude files completion
   set display=lastline           " Show as much as possible of the last line
