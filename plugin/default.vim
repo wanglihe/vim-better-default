@@ -46,7 +46,7 @@ set smartcase      " ... but case sensitive when uc present
 set scrolljump=5   " Line to scroll when cursor leaves screen
 set scrolloff=3    " Minumum lines to keep above and below cursor
 set shiftwidth=4   " Use indents of 4 spaces
-set tabstop=4      " An indentation every four columns
+set tabstop=8      " An indentation every four columns
 set softtabstop=4  " Let backspace delete indent
 set splitright     " Puts new vsplit windows to the right of the current
 set splitbelow     " Puts new split windows to the bottom of the current
@@ -63,6 +63,8 @@ set report=0       " Always report changed lines
 set linespace=0    " No extra spaces between rows
 set pumheight=20   " Avoid the pop up menu occupying the whole screen
 
+autocmd FileType c,cpp,java,php,xml,erlang,python,tex autocmd BufWritePre <buffer> :%s/\s\+$//e
+
 if !exists('g:vim_better_default_tabs_as_spaces') || g:vim_better_default_tabs_as_spaces
   set expandtab    " Tabs are spaces, not tabs
 end
@@ -77,7 +79,7 @@ set listchars=tab:→\ ,eol:↵,trail:·,extends:↷,precedes:↶
 
 set termencoding=utf-8
 set fileencoding=utf-8
-set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936,iso-8859-1,utf-16
 
 set wildignore+=*swp,*.class,*.pyc,*.png,*.jpg,*.gif,*.zip
 set wildignore+=*/tmp/*,*.o,*.obj,*.so     " Unix
