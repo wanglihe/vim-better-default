@@ -57,8 +57,6 @@ set ruler          " Show the ruler
 set cc=81
 set showcmd        " Show partial commands in status line and Selected characters/lines in visual mode
 set showmode       " Show current mode in command-line
-set showmatch      " Show matching brackets/parentthesis
-set matchtime=5    " Show matching time
 set report=0       " Always report changed lines
 set linespace=0    " No extra spaces between rows
 set pumheight=20   " Avoid the pop up menu occupying the whole screen
